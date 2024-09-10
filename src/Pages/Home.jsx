@@ -1,5 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Services from "../Components/Services";
+import AboutCompany from "../Components/AboutCompany";
+import Products from "../Components/Products";
+import ServicesWeOffer from "../Components/ServicesWeOffer";
+import AboutUs from "../Components/AboutUs";
+import CarouselComponent from "../Components/CarouselComponent";
 
 function HomePage() {
   return (
@@ -15,11 +21,33 @@ function HomePage() {
               and reliable AC parts across Vadodara.
             </p>
             <Link to="/products">
-              <button className="bg-black text-white px-6 py-3 rounded-md text-lg">
+              <button className="bg-orange-400 text-white px-6 py-3 rounded-md text-lg">
                 View Products
               </button>
             </Link>
           </div>
+        </section>
+
+        <CarouselComponent />
+
+        <section className="py-10">
+          <Services />
+        </section>
+
+        <section className="bg-gray-100 py-10">
+          <AboutCompany />
+        </section>
+
+        <section className="py-10">
+          <Products />
+        </section>
+
+        <section className="bg-gray-100 py-10">
+          <ServicesWeOffer />
+        </section>
+
+        <section className="py-10">
+          <AboutUs />
         </section>
       </div>
     </>

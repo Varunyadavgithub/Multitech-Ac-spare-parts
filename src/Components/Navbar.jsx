@@ -18,7 +18,7 @@ function Navbar() {
             <img 
               src={logo}
               alt="MultiTech AC Spare Parts" 
-              className="h-20 w-auto mr-4" 
+              className="h-20 md:h-28 w-auto mr-4" 
             />
           </Link>
         </div>
