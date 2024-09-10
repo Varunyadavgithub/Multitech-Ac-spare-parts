@@ -24,10 +24,10 @@ function Navbar() {
         </div>
 
         <div className="hidden md:flex space-x-6">
-          <Link to="/" className="text-white hover:text-yellow-400">Home</Link>
-          <Link to="/products" className="text-white hover:text-yellow-400">Products</Link>
-          <Link to="/about" className="text-white hover:text-yellow-400">About Us</Link>
-          <Link to="/contact" className="text-white hover:text-yellow-400">Contact</Link>
+          <Link to="/" className="text-white hover:text-yellow-400 hover:scale-105">Home</Link>
+          <Link to="/products" className="text-white hover:text-yellow-400 hover:scale-105">Products</Link>
+          <Link to="/about" className="text-white hover:text-yellow-400 hover:scale-105">About Us</Link>
+          <Link to="/contact" className="text-white hover:text-yellow-400 hover:scale-105">Contact</Link>
         </div>
 
         <div className="md:hidden">

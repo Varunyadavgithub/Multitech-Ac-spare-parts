@@ -41,7 +41,6 @@ const ProductPage = () => {
         </p>
       </section>
 
-      {/* Products Section */}
       <section className="products py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {productItems.map((product, index) => (
@@ -64,7 +63,6 @@ const ProductPage = () => {
         </div>
       </section>
 
-      {/* About Section */}
       <section className="about bg-gray-50 py-12 text-center">
         <h2 className="text-3xl font-bold mb-4">About Our Company</h2>
         <p className="text-lg max-w-3xl mx-auto">
