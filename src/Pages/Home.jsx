@@ -21,7 +21,7 @@ function HomePage() {
               and reliable AC parts across Vadodara.
             </p>
             <Link to="/products">
-              <button className="bg-orange-400 text-white px-6 py-3 rounded-md text-lg">
+              <button className="bg-orange-600 text-white px-6 py-3 rounded-md text-lg">
                 View Products
               </button>
             </Link>
