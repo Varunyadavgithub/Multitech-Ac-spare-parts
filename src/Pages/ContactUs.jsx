@@ -3,7 +3,6 @@ import React from "react";
 const ContactUs = () => {
   return (
     <div className="container mx-auto px-4 py-12">
-      {/* Contact Information */}
       <section className="mb-12 text-center">
         <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
         <p className="text-lg max-w-2xl mx-auto mb-6">
@@ -12,20 +11,19 @@ const ContactUs = () => {
         <div className="flex flex-col items-center space-y-6">
           <div className="flex items-center space-x-4">
             <i className="fas fa-map-marker-alt text-blue-500 text-2xl"></i>
-            <p className="text-lg">123 AC Spare Parts Street, City, Country</p>
+            <p className="text-lg">Office No.4 Jainab Park Tower C B/h, Amrapali Society, Gorwa, Vadodara, Gujarat</p>
           </div>
           <div className="flex items-center space-x-4">
             <i className="fas fa-phone-alt text-blue-500 text-2xl"></i>
-            <p className="text-lg">+91 123 456 7890</p>
+            <p className="text-lg">+91 748 605 2477</p>
           </div>
           <div className="flex items-center space-x-4">
             <i className="fas fa-envelope text-blue-500 text-2xl"></i>
-            <p className="text-lg">contact@multitechac.com</p>
+            <p className="text-lg">infotech@multitechacspareparts.com</p>
           </div>
         </div>
       </section>
 
-      {/* Contact Form */}
       <section className="bg-gray-100 py-12 rounded-md">
         <h2 className="text-3xl font-bold text-center mb-6">Send Us a Message</h2>
         <form
@@ -76,7 +74,6 @@ const ContactUs = () => {
         </form>
       </section>
 
-      {/* Map Section (Optional) */}
       <section className="my-12">
         <h2 className="text-3xl font-bold text-center mb-6">Our Location</h2>
         <div className="w-full h-60">

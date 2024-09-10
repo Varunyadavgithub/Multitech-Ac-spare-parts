@@ -56,9 +56,9 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <ul className="space-y-2">
-              <li>Address: 123 Tech Street, Vadodara, Gujarat</li>
-              <li>Email: support@multitech.com</li>
-              <li>Phone: +91-123-456-7890</li>
+              <li>Address: Office No.4 Jainab Park Tower C B/h, Amrapali Society, Gorwa, Vadodara, Gujarat</li>
+              <li>Email: infotech@multitechacspareparts.com</li>
+              <li>Phone: +91-748-605-2477</li>
               <li>Working Hours: Mon-Fri 9am to 6pm</li>
             </ul>
           </div>
