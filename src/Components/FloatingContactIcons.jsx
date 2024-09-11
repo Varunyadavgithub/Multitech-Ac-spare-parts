@@ -13,7 +13,6 @@ const FloatingContactIcons = () => {
         <FaPhoneAlt className="text-xl" />
       </a>
 
-      {/* WhatsApp Icon */}
       <a
         href="https://wa.me/917486052477"
         className="w-12 h-12 bg-green-500 text-white flex items-center justify-center rounded-full shadow-lg transition-transform transform hover:scale-110"
