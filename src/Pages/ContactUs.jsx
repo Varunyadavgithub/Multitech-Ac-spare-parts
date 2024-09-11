@@ -24,7 +24,7 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section className="bg-gray-100 py-12 rounded-md">
+      <section className="bg-gray-100 py-12 px-2 rounded-md">
         <h2 className="text-3xl font-bold text-center mb-6">Send Us a Message</h2>
         <form
           action="#"

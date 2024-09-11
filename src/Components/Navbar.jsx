@@ -1,37 +1,63 @@
-import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/images/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const location=useLocation();
+  const location = useLocation();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const isActive=(path)=>{
-    return location.pathname === path ? 'text-yellow-400' : 'text-white';
-  }
+  const isActive = (path) => {
+    return location.pathname === path ? "text-yellow-400" : "text-white";
+  };
   return (
     <nav className="bg-black p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <Link to="/">
-            <img 
+            <img
               src={logo}
-              alt="MultiTech AC Spare Parts" 
-              className="h-20 md:h-28 w-auto mr-4" 
+              alt="MultiTech AC Spare Parts"
+              className="h-20 md:h-28 w-auto mr-4"
             />
           </Link>
         </div>
 
         <div className="hidden md:flex space-x-6">
-          <Link to="/" className={`${isActive('/')} hover:text-yellow-400 hover:scale-105`}>Home</Link>
-          <Link to="/products" className={`${isActive('/products')} hover:text-yellow-400 hover:scale-105`}>Products</Link>
-          <Link to="/about" className={`${isActive('/about')} hover:text-yellow-400 hover:scale-105`}>About Us</Link>
-          <Link to="/contact" className={`${isActive('/contact')} hover:text-yellow-400 hover:scale-105`}>Contact</Link>
+          <Link
+            to="/"
+            className={`${isActive("/")} hover:text-yellow-400 hover:scale-105`}
+          >
+            Home
+          </Link>
+          <Link
+            to="/products"
+            className={`${isActive(
+              "/products"
+            )} hover:text-yellow-400 hover:scale-105`}
+          >
+            Products
+          </Link>
+          <Link
+            to="/about"
+            className={`${isActive(
+              "/about"
+            )} hover:text-yellow-400 hover:scale-105`}
+          >
+            About Us
+          </Link>
+          <Link
+            to="/contact"
+            className={`${isActive(
+              "/contact"
+            )} hover:text-yellow-400 hover:scale-105`}
+          >
+            Contact
+          </Link>
         </div>
 
         <div className="md:hidden">
@@ -45,19 +71,47 @@ function Navbar() {
         </div>
       </div>
 
-      <div className={`md:hidden mt-2 ${isOpen ? 'block' : 'hidden'}`}>
+      <div className={`md:hidden mt-2 ${isOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col space-y-2">
           <li>
-            <Link to="/" className={`${isActive('/')} hover:text-yellow-400 block px-3 py-2 rounded-md`}>Home</Link>
+            <Link
+              to="/"
+              className={`${isActive(
+                "/"
+              )} hover:text-yellow-400 block px-3 py-2 rounded-md`}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/products" className={`${isActive('/products')} hover:text-yellow-400 block px-3 py-2 rounded-md`}>Products</Link>
+            <Link
+              to="/products"
+              className={`${isActive(
+                "/products"
+              )} hover:text-yellow-400 block px-3 py-2 rounded-md`}
+            >
+              Products
+            </Link>
           </li>
           <li>
-            <Link to="/about" className={`${isActive('/about')} hover:text-yellow-400 block px-3 py-2 rounded-md`}>About Us</Link>
+            <Link
+              to="/about"
+              className={`${isActive(
+                "/about"
+              )} hover:text-yellow-400 block px-3 py-2 rounded-md`}
+            >
+              About Us
+            </Link>
           </li>
           <li>
-            <Link to="/contact" className={`${isActive('/contact')} hover:text-yellow-400 block px-3 py-2 rounded-md`}>Contact</Link>
+            <Link
+              to="/contact"
+              className={`${isActive(
+                "/contact"
+              )} hover:text-yellow-400 block px-3 py-2 rounded-md`}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
