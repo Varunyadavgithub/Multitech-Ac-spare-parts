@@ -1,7 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    return location.pathname === path ? "text-yellow-400" : "text-white";
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div>
       <footer className="bg-black text-white py-10 px-4">
@@ -20,22 +32,38 @@ const Footer = () => {
             <h2 className="text-lg font-semibold mb-4">Useful Links</h2>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="hover:text-yellow-400">
+                <Link
+                  to="/"
+                  className={`${isActive("/")} hover:text-yellow-400`}
+                  onClick={scrollToTop}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/products" className="hover:text-yellow-400">
+                <Link
+                  to="/products"
+                  className={`${isActive("/products")} hover:text-yellow-400`}
+                  onClick={scrollToTop}
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="hover:text-yellow-400">
+                <Link
+                  to="/about"
+                  className={`${isActive("/about")} hover:text-yellow-400`}
+                  onClick={scrollToTop}
+                >
                   About Us
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="hover:text-yellow-400">
+                <Link
+                  to="/contact"
+                  className={`${isActive("/contact")} hover:text-yellow-400`}
+                  onClick={scrollToTop}
+                >
                   Contact
                 </Link>
               </li>
@@ -56,7 +84,10 @@ const Footer = () => {
           <div>
             <h2 className="text-lg font-semibold mb-4">Contact Us</h2>
             <ul className="space-y-2">
-              <li>Address: Office No.4 Jainab Park Tower C B/h, Amrapali Society, Gorwa, Vadodara, Gujarat</li>
+              <li>
+                Address: Office No.4 Jainab Park Tower C B/h, Amrapali Society,
+                Gorwa, Vadodara, Gujarat
+              </li>
               <li>Email: infotech@multitechacspareparts.com</li>
               <li>Phone: +91-748-605-2477</li>
               <li>Working Hours: Mon-Fri 9am to 6pm</li>
