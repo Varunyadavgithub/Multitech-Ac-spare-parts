@@ -8,7 +8,7 @@ function HomePage() {
     <>
       <div className="flex flex-col min-h-screen">
         <CarouselComponent />
-        <section className="bg-gray-100 text-center py-20">
+        <section className="bg-gray-100 text-center py-20 px-2">
           <div className="container mx-auto">
             <h1 className="text-5xl font-bold text-black mb-4">
               Welcome to MultiTech AC Spare Parts
@@ -54,7 +54,7 @@ function HomePage() {
           </div>
         </section>
 
-        <section className="bg-gray-100 py-10">
+        <section className="bg-gray-100 py-10 px-2">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">About the Company</h2>
             <p className="text-lg">
@@ -88,7 +88,7 @@ function HomePage() {
           </div>{" "}
         </section>
 
-        <section className="py-10">
+        <section className="py-10 px-2">
           <div className="container mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">About Us</h2>
             <p className="text-lg">

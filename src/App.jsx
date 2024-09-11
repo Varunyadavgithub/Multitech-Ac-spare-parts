@@ -22,7 +22,7 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
-        <FloatingContactIcons/>
+        <FloatingContactIcons />
       </Router>
     </div>
   );
