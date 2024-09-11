@@ -6,6 +6,7 @@ import Products from "./Pages/Products";
 import Aboutus from "./Pages/Aboutus";
 import Contact from "./Pages/ContactUs";
 import Footer from "./Components/Footer";
+import FloatingContactIcons from "./Components/FloatingContactIcons";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           </Routes>
         </div>
         <Footer />
+        <FloatingContactIcons/>
       </Router>
     </div>
   );
