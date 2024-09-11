@@ -45,6 +45,7 @@ const Products = () => {
                 src={product.img}
                 alt={product.name}
                 className="mb-4 w-full h-48 object-cover"
+                loading="lazy"
               />
               <h3 className="text-xl font-semibold">{product.name}</h3>
               <p className="text-gray-500 mt-2">{product.price}</p>
